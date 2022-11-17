@@ -27,6 +27,7 @@ Return the number that I picked.
 
 Solution is:
 
+- Binary search
 - O(log(n)) time: The range of the input is halved each iteration, therefore the runtime is reduced.
 - O(1) space: No extra space is allocated that cannot be determined at runtime.
 
