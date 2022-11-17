@@ -30,7 +30,7 @@ Solution is:
 - O(log(n)) time: The range of the input is halved each iteration, therefore the runtime is reduced.
 - O(1) space: No extra space is allocated that cannot be determined at runtime.
 
-\*Since `pick` is namespaced, `__pick__` can be used to make the solution O(1) time :wink:`
+_Since_ `pick` _is namespaced,_ `__pick__` _can be used to make the solution O(1) time :wink:_
 
 ## 1480 - Running Sum of 1D Array: 11/15/2022
 
