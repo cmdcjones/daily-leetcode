@@ -1,5 +1,45 @@
 # Daily Leetcode
 
+## 223 - Rectangle Area: 11/17/2022
+
+![](223-rectangle-area/rectangle-area.png)
+![](223-rectangle-area/rectangle-area-code.png)
+
+### Problem
+
+Given the coordinates of two **rectilinear** rectangles in a 2D plane, return the _total area covered by the two rectangles_.
+
+The first rectangle is defined by its **bottom-left** corner `(ax1, ay1)` and its **top-right** corner `(ax2, ay2)`.
+
+The second rectangle is defined by its **bottom-left** corner `(bx1, by1)` and its **top-right** corner `(bx2, by2)`.
+
+### Assumptions
+
+- Bottom-left coords are always less than top right coordinates
+- There are a limited number of intersection combinations (4)
+
+### Optimizations
+
+Solution is:
+
+- O(1) time: The size of the input is always known at runtime
+- O(1) space: No extra space is allocated that cannot be determined at runtime
+
+### Notes
+
+This problem was difficult to understand on a 2D perspective but became clear on a 1D perspective.
+
+Through the four combinations of rectangle coordinates:
+
+- a1-b1-a2-b2
+- a1-b1-b2-a2
+- b1-a1-b2-a2
+- b1-a1-a2-b2
+
+Only the inner two coordinates would reveal the overlap of the input rectangles.
+
+Once the area of the overlap is determined, subtracting the overlap from the sum of the input rectangles gives the final answer.
+
 ## 374 - Guess Number Higher or Lower: 11/16/2022
 
 ![](374-guess-number/guess-number.png)
@@ -30,6 +70,8 @@ Solution is:
 - Binary search
 - O(log(n)) time: The range of the input is halved each iteration, therefore the runtime is reduced.
 - O(1) space: No extra space is allocated that cannot be determined at runtime.
+
+### Notes
 
 _Since_ `pick` _is namespaced,_ `__pick__` _can be used to make the solution O(1) time :wink:_
 
