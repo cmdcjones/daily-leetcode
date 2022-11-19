@@ -1,5 +1,32 @@
 # Daily Leetcode
 
+## 434 - Number of Segments in a String: 11/18/2022
+
+![](434-number-of-segments/number-of-segments.png)
+![](434-number-of-segments/number-of-segments-code.png)
+
+### Problem
+
+Given a string `s`, return _the number of segments in the string_.
+
+A **segment** is defined to be a contiguous sequence of **non-space characters**.
+
+### Assumptions
+
+- There must be a way for the computer to keep track of what is contiguous and what is not.
+- The input can be anything, therefore leading and trailing whitespace must be accounted for.
+
+### Optimizations:
+
+Solution is:
+
+- O(n) time: The runtime scales linearly with the size of the input
+- O(1) space: No extra space is allocated that cannot be determined at runtime
+
+### Notes
+
+This solution felt optimal but could possibly lean towards brute force. Without the use of built-in functions, I had to think differently when reaching a solution. Remembering that a computer does not know the difference between contiguous, and not, was helpful.
+
 ## 223 - Rectangle Area: 11/17/2022
 
 ![](223-rectangle-area/rectangle-area.png)
