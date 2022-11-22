@@ -1,5 +1,34 @@
 # Daily Leetcode
 
+## 1 - Two Sum: 11/22/2022
+
+![](1-two-sum/two-sum.png)
+![](1-two-sum/two-sum-code.png)
+
+### Problem
+
+Given an array of integers `nums` and an integer `target`, _return indices of the two numbers such that they add up to_ target.
+
+You may assume that each input would have **exactly one solution**, and you may not use the _same_ element twice.
+
+You can return the answer in any order.
+
+### Assumptions
+
+- One way to store a number and its index is using a hash map
+- Using a hash map allows you to check the sum of two numbers without using a second loop or window method
+
+### Optimizations
+
+Solution is:
+
+- O(n) time: The runtime scales linearly with the size of the input
+- O(n) space: A hash map is created and will also scale linearly with the size of the input
+
+### Notes
+
+Using the difference statement enables me to check the currently stored numbers and, if hashmap\[difference\] is in the table, add hashmap\[difference\] to the current number and get target.
+
 ## 724 - Find Pivot Index: 11/22/2022 (I was sick, now I'm back!)
 
 ![](724-find-pivot-index/find-pivot-index.png)
