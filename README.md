@@ -1,5 +1,36 @@
 # Daily Leetcode
 
+## 724 - Find Pivot Index: 11/22/2022 (I was sick, now I'm back!)
+
+![](724-find-pivot-index/find-pivot-index.png)
+![](724-find-pivot-index/find-pivot-index-code.png)
+
+### Problem
+
+Given an array of integers `nums`, calculate the **pivot index** of this array.
+
+The **pivot index** is the index where the sum of all the numbers **strictly** to the left of the index is equal to the sum of all the numbers **strictly** to the index's right.
+
+If the index is on the left edge of the array, then the left sum is `0` because there are no elements to the left. This also applies to the right edge of the array.
+
+Return the **leftmost pivot index**. If no such index exists, return `-1`.
+
+### Assumptions
+
+- If the left sum is known, then the right sum can be calculated by the following: `right_sum = sum(nums) - left_sum - nums[n] #where n is the current index`
+- Therefore, storing the right sum is redundant and instead the left sum alone can be checked through a conditional
+
+### Optimizations
+
+Solution is:
+
+- O(n) time: The runtime scales linearly with the size of the input
+- O(n) space: No extra space is allocated that cannot be determined at runtime
+
+### Notes
+
+I wrote this code differently the first time around. It accomplished the same task but was not efficient enough to pass a test case where the input was extremely large. I had to take a step back and look at the problem differently. Everytime I solve a challenge, I learn a little bit more than last time!
+
 ## 434 - Number of Segments in a String: 11/18/2022
 
 ![](434-number-of-segments/number-of-segments.png)
@@ -16,7 +47,7 @@ A **segment** is defined to be a contiguous sequence of **non-space characters**
 - There must be a way for the computer to keep track of what is contiguous and what is not.
 - The input can be anything, therefore leading and trailing whitespace must be accounted for.
 
-### Optimizations:
+### Optimizations
 
 Solution is:
 
