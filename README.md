@@ -1,5 +1,36 @@
 # Daily Leetcode
 
+## 392 - Is Subsequence: 11/29/2022
+
+![](392-is-subsequence/is-subsequence.png)
+![](392-is-subsequence/is-subsequence-code-stack.png)
+![](392-is-subsequence/is-subsequence-code-index.png)
+
+### Problem
+
+Given two strings `s` and `t`, return `true` if `s` *is a **subsequence** of* `t`, or `false` *otherwise*.
+
+A **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., `"ace"` is a subsequence of `"abcde"` while `"aec"` is not).
+
+### Assumptions
+
+- One way to track elements in a collection, ensuring they are removed in order, is a stack.
+- If elements are not removed in order, the end of the compared string `t` will be reached with elements remaining in the stack.
+
+### Optimizations
+
+Solution is:
+
+- O(n) time: The compared string must be traversed therefore the runtime scales linearly with the input.
+- O(1) space: The size of the data structure used for the algorithm is only as big as `s`. `s` is known at runtime, therefore the data structure does not scale up.
+
+### Notes
+
+Since my mind saw the problem and immediately thought "a stack would solve this...", I did not think about using a separate variable `index` to check each character in `s`.
+Both solutions essentially work the same. The stack will pop off a character if found, and the index will increment to the next character in `s`.
+
+I do think that the stack, in theory, is more efficient. As `s` grows, the stack will actually get *smaller*; while with index the number will continue to increase.
+
 ## 205 - Isomorphic Strings: 11/28/2022
 
 ![](205-isomorphic-strings/isomorphic-strings.png)
