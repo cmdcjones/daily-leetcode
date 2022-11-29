@@ -1,5 +1,30 @@
 # Daily Leetcode
 
+## 205 - Isomorphic Strings: 11/28/2022
+
+![](205-isomorphic-strings/isomorphic-strings.png)
+![](205-isomorphic-strings/isomorphic-strings-code.png)
+
+### Problem
+
+Given two strings `s` and `t`, *determine if they are isomorphic.*
+
+Two strings `s` and `t` are isomorphic if the characters in `s` can be replaced to get `t`.
+
+All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself.
+
+### Assumptions
+
+- One easy way to pair two values is to store them in a hash map with the first string's characters as the keys and the second string's characters as the
+  values.
+- Hash maps do not allow duplicates meaning the keys can only map to the values found on the first occurrence.
+
+### Optimizations
+
+Solution is:
+
+- O(n) time: The string must be traversed therefore the runtime scales linearly with the input.
+- O(n) space: A hash map is created and will also scale linearly with the size of the input.
 ## 1 - Two Sum: 11/22/2022
 
 ![](1-two-sum/two-sum.png)
