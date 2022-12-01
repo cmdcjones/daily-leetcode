@@ -1,5 +1,33 @@
 # Daily Leetcode
 
+## 21 Merged Two Sorted Lists: 11/30/22
+
+![](21-merge-two-sorted-lists/merge-two-sorted-lists.png)
+![](21-merge-two-sorted-lists/merge-two-sorted-lists-code.png)
+
+### Problem
+
+You are given the heads of two sorted linked lists `list1` and `list2`.
+
+Merge the two lists in a one **sorted** list. The list should be made by splicing together the nodes of the first two lists.
+
+Return the *head of the merged linked list*.
+
+### Assumptions
+
+- The nodes in each linked list is already sorted, so I will not have to implement any sorts beforehand.
+
+### Optimizations
+
+Solution is:
+
+- O(n) time: Although the comparisons are constant time, accessing each node one by one through recursion makes this algorithm scale linearly with the input.
+- O(1) space: The algorithm did not require extra space in its solution therefore uses constant space.
+
+### Notes
+
+...I do not like recursion........ Also, the problem statement was worded a bit strange. As the problem requested that the *head* of the linked list be returned, but instead I returned the linked list in entirety.
+
 ## 392 - Is Subsequence: 11/29/2022
 
 ![](392-is-subsequence/is-subsequence.png)
