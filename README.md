@@ -1,5 +1,30 @@
 # Daily Leetcode
 
+## 206 Reverse Linked List: 12/5/2022
+
+![](206-reverse-linked-list/reverse-linked-list.png)
+![](206-reverse-linked-list/reverse-linked-list-code.png)
+
+### Problem
+
+Given the `head` of a singly linked list, reverse the list, and *return the reversed list*.
+
+### Assumptions
+
+- Using a while loop allows me to traverse a linked list without knowing its length and without recursion
+
+### Optimizations
+
+Solution is:
+
+- O(n) time: The use of a while loop makes this algorithm scale linearly with the input.
+- O(1) space: The algorithm did not require extra space in its solution therefore uses constant space.
+
+### Notes
+
+At first, I considered recursion since it seemed like the "easiest" way to traverse the linked list. But since my base case was always reached `None` at the last node's `next`, I realized that a while loop would work just as well and look cleaner.
+Whenever I traverse linked lists with recursion, it's handled in a way I can't fully understand. In my head I know what is happening, but thinking computationally it doesn't add up. With this implementation, I am able to really visualize the traversal and reversal of nodes.
+
 ## 21 Merged Two Sorted Lists: 11/30/22
 
 ![](21-merge-two-sorted-lists/merge-two-sorted-lists.png)
