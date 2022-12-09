@@ -1,5 +1,32 @@
 # Daily Leetcode
 
+## 876 Middle of Linked List: 12/8/2022
+
+![](876-middle-of-linked-list/middle-of-linked-list.png)
+![](876-middle-of-linked-list/middle-of-linked-list-code.png)
+
+### Problem
+
+Given the `head` of a singly linked list, *return the middle node of the linked list*.
+
+If there are two middle nodes, return **the second middle** node.
+
+### Assumptions
+
+- I can use two pointers to keep track of the middle and the last node in the linked list.
+- If the head pointer is two steps ahead of the middle pointer, the middle pointer will always be halfway through the linked list.
+
+### Optimizations
+
+Solution is:
+
+- O(n) time: The use of a while loop makes this algorithm scale linearly with the input.
+- O(1) space: The algorithm did not require extra space in its solution therefore uses constant space.
+
+### Notes
+
+I learned today that the algorithm I used is called the Tortoise and the Hare algorithm where one pointer is faster than the other.
+
 ## 206 Reverse Linked List: 12/5/2022
 
 ![](206-reverse-linked-list/reverse-linked-list.png)
