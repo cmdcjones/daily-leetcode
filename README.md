@@ -1,9 +1,9 @@
 # Daily Leetcode
 
-## 876 Middle of Linked List: 12/8/2022
+## 867 Middle of Linked List: 12/8/2022
 
-![](876-middle-of-linked-list/middle-of-linked-list.png)
-![](876-middle-of-linked-list/middle-of-linked-list-code.png)
+![](867-middle-of-linked-list/middle-of-linked-list.png)
+![](867-middle-of-linked-list/middle-of-linked-list-code.png)
 
 ### Problem
 
