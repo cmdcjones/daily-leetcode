@@ -1,5 +1,7 @@
 # Daily Leetcode
 
+## Holiday Break - I will post more problems soon!
+
 ## 867 Middle of Linked List: 12/8/2022
 
 ![](867-middle-of-linked-list/middle-of-linked-list.png)
